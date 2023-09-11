@@ -3,24 +3,53 @@ package th.mfu;
 import java.util.Date;
 
 public class Concert {
-
+    private int id;
+    private String title;
+    private String performer;
+    private String description;
+    private Date date;
     //TODO: add attributes
-
     public Concert() {
     }
     public Concert(String title, String description) {
         //TODO: set attributes
+        this.title = title;
+        this.description = description;
     }
- 
+ //TODO: add getters and setters
     public String getTitle() {
         //TODO: return title
-        return "";
+        return "title";
     }
     public String getDescription() {
         //TODO: return description
-        return "";
+        return "description";
+    }
+    public int getId() {
+        return id;
+    }
+    public void setId(int id) {
+        this.id = id;
+    }
+    public void setTitle(String title) {
+        this.title = title;
+    }
+    public String getPerformer() {
+        return performer;
+    }
+    public void setPerformer(String performer) {
+        this.performer = performer;
+    }
+    public void setDescription(String description) {
+        this.description = description;
+    }
+    public Date getDate() {
+        return date;
+    }
+    public void setDate(Date date) {
+        this.date = date;
     }
 
-    //TODO: add getters and setters
+    
 
 }
